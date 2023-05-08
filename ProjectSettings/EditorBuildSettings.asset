@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/outpost with snow.unity
+    guid: e8cf1d29775c7e24f9dd35148a6437c0
+  - enabled: 1
     path: Assets/Scenes/Testing.unity
     guid: aa5889ae9feef9446979caade9f1adab
   m_configObjects:
