@@ -26,4 +26,11 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    public void OnQuitButtonClick()
+    {
+        Application.Quit();
+        Debug.Log("Quit");
+
+    }
 }

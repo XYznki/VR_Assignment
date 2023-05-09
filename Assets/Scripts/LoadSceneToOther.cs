@@ -26,4 +26,6 @@ public class LoadSceneToOther : MonoBehaviour, IPointerClickHandler
         SceneManager.LoadScene(sceneName);
     }
 
+
+
 }
