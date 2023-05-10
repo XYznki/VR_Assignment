@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - ClickableCube
+  - TrackingObject
+  - Box
+  - Trail
+  - Actors
+  - Planet
   layers:
   - Default
   - TransparentFX
