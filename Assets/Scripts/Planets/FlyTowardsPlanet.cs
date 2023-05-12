@@ -4,38 +4,43 @@ using UnityEngine;
 
 public class FlyTowardsPlanet : MonoBehaviour
 {
-    public Transform destination;
+    public Transform planet;
+    public float planetdistance = 5f;
+    public float damping = 0.5f;
+    public float height = 5f;
+
+    private Vector3 velocity = Vector3.zero;
     public float flySpeed = 10f;
 
     public Vector3 targetPosition;
-    private float distance;
     private float startTime;
     private bool isMoving = false;
 
-    void Start()
-    {
-        targetPosition = destination.position;
-        distance = Vector3.Distance(transform.position, targetPosition);
-    }
 
     void Update()
     {
-        if(isMoving)
+        if (isMoving)
         {
-            float distCovered = (Time.time - startTime) / flySpeed;
-            float fractionOfJourney = distCovered/ distance;
-            transform.position = Vector3.Lerp(transform.position,targetPosition,fractionOfJourney);
+            //transform.position = destination.position;
+            //float distCovered = (Time.time - startTime) / flySpeed;
+            //float fractionOfJourney = 5 / distance;
+            transform.position = Vector3.Lerp(transform.position, targetPosition, 0.01f);
 
-            if(fractionOfJourney >= 1f)
-            {
-                isMoving = false;
-            }
+            Vector3 targetPos = planet.position + Vector3.up * height - planet.forward * planetdistance;
+            transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, damping);
+            transform.LookAt(planet);
+
+            //if (fractionOfJourney >= 1f)
+            //{
+            //    isMoving = false;
+            //}
 
         }
     }
 
-    public void StartMovement()
+    public void StartMovement(Transform planet)
     {
+        this.planet = planet;
         isMoving = true;
         startTime = Time.time;
     }
