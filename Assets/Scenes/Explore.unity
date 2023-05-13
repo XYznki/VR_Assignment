@@ -1181,6 +1181,7 @@ GameObject:
   - component: {fileID: 149658926}
   - component: {fileID: 149658925}
   - component: {fileID: 149658928}
+  - component: {fileID: 149658929}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -1477,6 +1478,24 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &149658929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149658919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f4c6c5096bc544bacb180d334323c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 0}
+  planetdistance: 5
+  damping: 0.5
+  height: 5
+  flySpeed: 10
+  targetPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &185893003
 GameObject:
   m_ObjectHideFlags: 0
@@ -2310,7 +2329,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StartMovement
         m_Mode: 2
@@ -2349,7 +2368,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StopMovement
         m_Mode: 1
@@ -3602,7 +3621,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StartMovement
         m_Mode: 2
@@ -3641,7 +3660,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StopMovement
         m_Mode: 1
@@ -5196,7 +5215,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StartMovement
         m_Mode: 2
@@ -5235,7 +5254,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StopMovement
         m_Mode: 1
@@ -7141,7 +7160,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StartMovement
         m_Mode: 2
@@ -7180,7 +7199,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StopMovement
         m_Mode: 1
@@ -9594,7 +9613,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StartMovement
         m_Mode: 2
@@ -9633,7 +9652,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StopMovement
         m_Mode: 1
@@ -11223,7 +11242,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StartMovement
         m_Mode: 2
@@ -11262,7 +11281,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StopMovement
         m_Mode: 1
@@ -11667,7 +11686,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StartMovement
         m_Mode: 2
@@ -11706,7 +11725,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StopMovement
         m_Mode: 1
@@ -12889,7 +12908,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StartMovement
         m_Mode: 2
@@ -12928,7 +12947,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StopMovement
         m_Mode: 1
@@ -13502,7 +13521,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StartMovement
         m_Mode: 2
@@ -13541,7 +13560,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 149658929}
         m_TargetAssemblyTypeName: FlyTowardsPlanet, Assembly-CSharp
         m_MethodName: StopMovement
         m_Mode: 1
