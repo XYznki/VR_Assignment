@@ -28,7 +28,7 @@ public class FlyTowardsPlanet : MonoBehaviour
 
             Vector3 targetPos = planet.position + Vector3.up * height - planet.forward * planetdistance;
             transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, damping);
-            transform.LookAt(planet);
+            //transform.LookAt(planet);
 
             //if (fractionOfJourney >= 1f)
             //{
@@ -44,4 +44,11 @@ public class FlyTowardsPlanet : MonoBehaviour
         isMoving = true;
         startTime = Time.time;
     }
+
+    public void StopMovement()
+    {
+        isMoving = false;
+    }
+
+    
 }
