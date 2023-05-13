@@ -9,6 +9,7 @@ public class FlyTowardsPlanet : MonoBehaviour
     public float damping = 0.5f;
     public float height = 5f;
 
+   
     private Vector3 velocity = Vector3.zero;
     public float flySpeed = 10f;
 
@@ -50,5 +51,5 @@ public class FlyTowardsPlanet : MonoBehaviour
         isMoving = false;
     }
 
-    
+  
 }
